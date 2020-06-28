@@ -11,11 +11,13 @@ class Product(models.Model):
     name= models.CharField(max_length= 100)
     category=models.ForeignKey(Category, on_delete=models.CASCADE) 
     description = models.TextField()
+    img_path = models.TextField()
     price =models.FloatField()
-    isActive=models.BooleanField(default=False)
+    is_active=models.BooleanField(default=False)
     quantity=models.FloatField();
 
+
+
 #many to one relation between product and category
-def __str__(self):
-    return 
+
 
