@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 # Create your views here.
-def product(request):
-    return HttpResponse('hello')
+def index(request):
+    return render(request, 'website/shop-grid.html')
+
+ #   def index(request):
+  #  return render(request, 'admin_panel/index.html')
