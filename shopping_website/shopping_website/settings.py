@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
-    'admin_panel_base_templates',
+    'admin_panel',
     'product',
 ]
 
@@ -121,7 +121,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "assets"),
-]
 AUTH_USER_MODEL = "accounts.User"
