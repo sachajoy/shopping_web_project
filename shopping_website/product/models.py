@@ -3,8 +3,7 @@ from django.db import models
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=100)
-    subCategory=models.CharField(max_length=100)
-    parent = models.ForeignKey("self", on_delete = models.CASCADE)
+    parent = models.ForeignKey("self", on_delete = models.CASCADE, db_constraint=False, null=True)
 
 class Product(models.Model):
     pId =models.CharField(primary_key=True, max_length=100)
