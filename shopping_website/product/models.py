@@ -3,7 +3,8 @@ from django.db import models
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=100)
-    sub_category = models.ForeignKey("self", on_delete = models.CASCADE, db_constraint=False, null=True)
+    sub_category = models.ForeignKey("self", on_delete = models.CASCADE,
+                                     db_constraint=False, null=True)
 
     def __str__(self):
         return "{}".format(self.name)
