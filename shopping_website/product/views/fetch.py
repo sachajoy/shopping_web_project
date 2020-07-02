@@ -1,13 +1,8 @@
 from django.shortcuts import render
 from collections import OrderedDict
 
-
-from peewee import *
-from product/models import *
+from .. import models
 #fectching  prodct data from db
-# Create your views here.
-db = SqliteDatabase('db.sqlite3')
-
-def fetch(request):
-    product_list = Product.object.all()
-    return render(request, 'product/display_products.html', {'product_list' : product_list})
+def fetch_products(request):
+    product_list = models.Product.objects.all()
+    return render(request, 'product/product_list.html', {'product_list' : product_list})
