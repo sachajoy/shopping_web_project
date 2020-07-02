@@ -1,0 +1,80 @@
+[
+  {
+    "model" : "product.product",
+    "pk" : 1,
+    "fields" : {
+      "name" : "Pixel 3",
+      "description" : "Great Value",
+      "img_path" : "website/img/pixel3.jpg",
+      "price" : 60000,
+      "is_active" : "True",
+      "quantity" : 10,
+      "category" : 3
+    }
+  },
+  {
+    "model" : "product.product",
+    "pk" : 2,
+    "fields" : {
+      "name" : "iPhone 11",
+      "description" : "Great Value",
+      "img_path" : "website/img/iPhone11.jpg",
+      "price" : 80000,
+      "is_active" : "True",
+      "quantity" : 6,
+      "category" : 4
+    }
+  },
+  {
+    "model" : "product.product",
+    "pk" : 3,
+    "fields" : {
+      "name" : "Pixel 4",
+      "description" : "Great Value",
+      "img_path" : "website/img/pixel4.jpg",
+      "price" : 80000,
+      "is_active" : "True",
+      "quantity" : 5,
+      "category" : 3
+    }
+  },
+  {
+    "model" : "product.product",
+    "pk" : 4,
+    "fields" : {
+      "name" : "iPhone 11 Pro",
+      "description" : "Great Value",
+      "img_path" : "website/img/iPhone11pro.jpg",
+      "price" : 90000,
+      "is_active" : "True",
+      "quantity" : 7,
+      "category" : 4
+    }
+  },
+  {
+    "model" : "product.product",
+    "pk" : 5,
+    "fields" : {
+      "name" : "Macbook Air 2020",
+      "description" : "Great Value",
+      "img_path" : "website/img/macbookair2020.jpg",
+      "price" : 100000,
+      "is_active" : "True",
+      "quantity" : 4,
+      "category" : 7
+    }
+  },
+  {
+    "model" : "product.product",
+    "pk" : 6,
+    "fields" : {
+      "name" : "XPS 13",
+      "description" : "Great Value",
+      "img_path" : "website/img/xps13.jpg",
+      "price" : 112000,
+      "is_active" : "True",
+      "quantity" : 6,
+      "category" : 9
+    }
+  }
+]
