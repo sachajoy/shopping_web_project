@@ -14,3 +14,5 @@ class CategoryListView(ListView):
     created by the admin of the system"""
     model = category
     context_object_name = 'categories'
+
+    
