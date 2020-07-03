@@ -12,5 +12,5 @@ class CategoryCreateView(CreateView):
 class CategoryListView(ListView):
     """To view the category that are there in the db
     created by the admin of the system"""
-    model = categoryadd
+    model = category
     context_object_name = 'categories'
