@@ -1,6 +1,10 @@
-from django.contrib import admin
-from django.urls import path,include
-from .views import views
+from django.urls import path
+from .views import views, category
+from django.conf.urls import url
+
 urlpatterns = [
-    path('', views.index),
+    # url('$', views.index),
+    url('create-category/$', category.CategoryCreateView.as_view(),
+        name='create-category'),
+    url('category-list/$', category.CategoryListView.as_view(), name='category-list'),
 ]
